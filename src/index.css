@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
+  height: 3000px;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303a52;
+  background-color: #222222;
 }
 
 code {

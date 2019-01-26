@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 // *----------* Components *----------*
-import Header from '../Header/Header';
+import HomePage from '../HomePage/HomePage'
 
 // *----------* Page Components *----------*
 
@@ -15,7 +15,7 @@ class App extends Component {
       <div>
         {/* <NavBar/> */}
         <div className="App">
-            < Header />
+            < HomePage />
         </div>
       </div>
     );

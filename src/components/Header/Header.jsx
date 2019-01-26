@@ -2,20 +2,11 @@
 import React, { Component } from 'react';
 
 // *----------* Components *----------*
-import TiltPhaseSix from '../TiltPhaseSix/TiltPhaseSix';
+import TiltComponent from '../TiltComponent/TiltComponent';
 
 // *----------* Styling *----------*
 import { CSSTransition } from 'react-transition-group';
 import './Header.css';
-
-// *----------*  *----------*
-import { findDOMNode } from 'react-dom';
-
-const options = {
-    max: 10,
-    perspective: 1000,
-    scale: 1.05,
-}
 
 // Displays profile photo and a brief biography
 class Header extends Component {
@@ -24,7 +15,7 @@ class Header extends Component {
         return (
             <div className='profile-header'>
 
-                <TiltPhaseSix
+                <TiltComponent
                     options={{}}
                     style={{
                         backgroundSize: 'fit',
@@ -40,7 +31,7 @@ class Header extends Component {
                             // backgroundSize:'200px'
                         }}
                     />
-                </TiltPhaseSix>
+                </TiltComponent>
 
 
                 <CSSTransition

@@ -1,3 +1,5 @@
+@import 'app';
+
 .profile-header{
     animation: fadein 1s ease-out;
 
@@ -15,7 +17,7 @@
     height: 100%;
 
     border-radius: 3px;
-    background-color: #ff5354;
+    background-color: $theme-secondary;
 }
 
 .profile-description{
@@ -31,12 +33,12 @@
 .hyperlink-text{
     user-select: none;
     text-decoration: none;
-    color: #ff5354;
+    color: $theme-secondary;
     cursor: pointer;
 }
 
 .hyperlink-text:hover{
-    text-shadow: 0px 0px 1px #ff5354;
+    text-shadow: 0px 0px 1px $theme-secondary;
 }
 
 /* Animations */

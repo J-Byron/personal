@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // *----------* Styling *----------*
-import './ShowCase.css';
+import '../../styles/build/ShowCase.css';
 
 // *----------* Components *----------*
 import TiltComponent from '../TiltComponent/TiltComponent';

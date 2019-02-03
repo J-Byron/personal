@@ -6,7 +6,7 @@ import TiltComponent from '../TiltComponent/TiltComponent';
 
 // *----------* Styling *----------*
 import { CSSTransition } from 'react-transition-group';
-import './Header.css';
+import '../../styles/build/Header.css';
 
 // Displays profile photo and a brief biography
 class Header extends Component {

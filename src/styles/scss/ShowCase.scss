@@ -1,0 +1,139 @@
+@import 'app';
+
+.showcaseContainer{
+    width: auto;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    transition-delay: 2s;
+    animation: fadein 1s ease-out;
+}
+
+.helix-tilt{
+    @extend %flex-column;
+    // border: 2px solid goldenrod;
+    justify-content: center;
+    transition: all .4s;
+    flex: 1;
+    
+    .helix-summoner{
+        // background-size: contain;
+        margin-top: 15px;
+
+        flex: 1 1 130px;
+    }
+
+    .helix-row{
+        @extend %flex-row;
+        width:80%;
+        margin: 5% auto 0% auto;
+        justify-content: space-between;
+
+        flex: 1 1 130px;
+
+        .helix-stats {
+            flex: 1;
+        }    
+
+        .helix-history{
+            flex: 1;
+        }
+    }
+
+}
+
+.helix-detail {
+
+    @extend %flex-column;
+    flex: 1;
+    padding-left: 50px;
+
+    .helix-header{
+        font-size: 5vw; 
+        color: $theme-secondary-active;
+        margin: 0px;
+        float: right;
+        transition: all .4s;
+    }
+    
+    .helix-text {
+        font-size: 18px;
+        color: rgb(175, 175, 175);
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
+    .helix-gg{
+        font-style: normal;
+        color: #eeeeee;
+    }
+    
+    .lol-link{
+        user-select: none;
+        text-decoration: none;
+        color: $theme-secondary-inactive;
+        cursor: pointer;
+        transition: color .4s;
+    }
+    
+    .lol-link:hover{
+        color: $theme-secondary-active;
+    }
+}
+
+
+
+// Media queries
+
+@media all and (max-width:768px) {
+.showcaseContainer {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    
+
+    .helix-tilt{
+        // border: 2px solid rgb(40, 21, 110);
+        width: 80%;
+        margin: auto;
+
+        .helix-summoner{
+            margin: 0px;
+            flex: 1 1 90px;
+        }
+
+        .helix-row{
+            margin: 10px 0px 0px 0px;
+            width: 100%;
+            flex: 1 1 60px;
+
+            .helix-stats {
+                flex: 1;
+            }    
+    
+            .helix-history{
+                flex: 1.2;
+            }
+        }
+    }
+
+    }
+}
+
+// Animations
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale3d(.96,.96,1);
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale3d(1,1,1);
+    }
+}

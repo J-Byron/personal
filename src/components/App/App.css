@@ -1,2 +1,12 @@
 
-  
+.App {
+    width: 70%;
+    margin: auto;
+    font-family: "San Francisco", "SF Pro Text", system-ui, sans-serif;
+}
+
+@media all and (max-width:768px) {
+    .App {
+        width: 90%;
+    }
+}

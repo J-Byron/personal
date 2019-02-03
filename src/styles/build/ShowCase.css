@@ -1,0 +1,153 @@
+.helix-tilt, .helix-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.helix-tilt .helix-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.showcaseContainer {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+  -webkit-animation: fadein 1s ease-out;
+  animation: fadein 1s ease-out; }
+
+.helix-tilt {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  .helix-tilt .helix-summoner {
+    margin-top: 15px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 130px;
+    flex: 1 1 130px; }
+  .helix-tilt .helix-row {
+    width: 80%;
+    margin: 5% auto 0% auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 130px;
+    flex: 1 1 130px; }
+    .helix-tilt .helix-row .helix-stats {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    .helix-tilt .helix-row .helix-history {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+
+.helix-detail {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 50px; }
+  .helix-detail .helix-header {
+    font-size: 5vw;
+    color: #00FF7F;
+    margin: 0px;
+    float: right;
+    -webkit-transition: all .4s;
+    transition: all .4s; }
+  .helix-detail .helix-text {
+    font-size: 18px;
+    color: #afafaf;
+    text-align: justify;
+    text-justify: inter-word; }
+  .helix-detail .helix-gg {
+    font-style: normal;
+    color: #eeeeee; }
+  .helix-detail .lol-link {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    color: #90EE90;
+    cursor: pointer;
+    -webkit-transition: color .4s;
+    transition: color .4s; }
+  .helix-detail .lol-link:hover {
+    color: #00FF7F; }
+
+@media all and (max-width: 768px) {
+  .showcaseContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 80%;
+    margin: auto; }
+    .showcaseContainer .helix-tilt {
+      width: 80%;
+      margin: auto; }
+      .showcaseContainer .helix-tilt .helix-summoner {
+        margin: 0px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 90px;
+        flex: 1 1 90px; }
+      .showcaseContainer .helix-tilt .helix-row {
+        margin: 10px 0px 0px 0px;
+        width: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 60px;
+        flex: 1 1 60px; }
+        .showcaseContainer .helix-tilt .helix-row .helix-stats {
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+        .showcaseContainer .helix-tilt .helix-row .helix-history {
+          -webkit-box-flex: 1.2;
+          -ms-flex: 1.2;
+          flex: 1.2; } }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px) scale3d(0.96, 0.96, 1);
+    transform: translateY(30px) scale3d(0.96, 0.96, 1); }
+  20% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale3d(1, 1, 1);
+    transform: translateY(0px) scale3d(1, 1, 1); } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px) scale3d(0.96, 0.96, 1);
+    transform: translateY(30px) scale3d(0.96, 0.96, 1); }
+  20% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale3d(1, 1, 1);
+    transform: translateY(0px) scale3d(1, 1, 1); } }

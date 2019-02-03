@@ -1,4 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
 .profile-header {
   -webkit-animation: fadein 1s ease-out;
   animation: fadein 1s ease-out;
@@ -20,13 +19,13 @@
   width: 100%;
   height: 100%;
   border-radius: 3px;
-  background-color: #ff5354; }
+  background-color: #00FF7F; }
 
 .profile-description {
   width: 60%;
-  color: #eee;
-  font-size: 19px;
-  font-family: 'Oswald', sans-serif;
+  color: #d4e0e0;
+  font-size: 17px;
+  font-weight: 500;
   margin: auto 0px auto 0px;
   text-align: justify;
   text-justify: inter-word; }
@@ -37,12 +36,12 @@
   -ms-user-select: none;
   user-select: none;
   text-decoration: none;
-  color: #ff535388;
+  color: #90EE90;
   cursor: pointer;
   -webkit-transition: color .4s;
   transition: color .4s; }
 
 .hyperlink-text:hover {
-  color: #ff5354; }
+  color: #00FF7F; }
 
 /* Animations */

@@ -28,7 +28,7 @@ export class ShowCase extends Component {
       <div className='showcaseContainer '>
         <TiltComponent 
           style={{
-            flex: 2,
+            flex: 1,
             backgroundColor: '#212830',
             borderRadius: '3px',
           }}
@@ -63,11 +63,7 @@ export class ShowCase extends Component {
 
         </TiltComponent>
 
-        <div className='helix-col' style={{
-          marginLeft: '6%',
-          width: '40%',
-          display: 'flex',
-        }}>
+        <div className='helix-detail'>
           <div className='helix-header'>
             Helix.GG
           </div>

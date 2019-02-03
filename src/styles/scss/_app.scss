@@ -1,4 +1,22 @@
 
+
+// Fonts
+@import url(//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
+$font: 'Oswald', sans-serif;
+
+
 // Colors
 $theme-primary: #222222;
-$theme-secondary: #ff5354;
+$theme-secondary-active: #ff5354;
+$theme-secondary-inactive:#ff535388;
+
+//
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,8 +1,26 @@
 @import url(//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
+.helix-tilt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.helix-tilt .helix-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
 .showcaseContainer {
-  width: 70%;
-  height: 300px;
-  margin: 9px auto 0px auto;
+  width: auto;
+  height: auto;
+  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,37 +33,47 @@
   -webkit-animation: fadein 1s ease-out;
   animation: fadein 1s ease-out; }
 
-.helix-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-.helix-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+.helix-tilt {
+  border: 2px solid goldenrod;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .helix-tilt .helix-summoner {
+    background-size: contain;
+    margin-top: 15px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 130px;
+    flex: 1 1 130px; }
+  .helix-tilt .helix-row {
+    width: 80%;
+    margin: 5% auto 0% auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 130px;
+    flex: 1 1 130px; }
+    .helix-tilt .helix-row .helix-stats {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    .helix-tilt .helix-row .helix-history {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
 
 .helix-header {
-  font-family: 'Krungthep';
+  font-family: "Oswald", sans-serif;
   font-size: 5vw;
-  color: #00adb5;
+  color: #ff5354;
   margin: 0px;
-  float: left; }
+  float: left;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
 
 .helix-text {
-  font-size: 13px;
-  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
   color: #afafaf;
   text-align: justify;
   text-justify: inter-word; }
@@ -60,11 +88,20 @@
   -ms-user-select: none;
   user-select: none;
   text-decoration: none;
-  color: #00adb5;
-  cursor: pointer; }
+  color: #ff535388;
+  cursor: pointer;
+  -webkit-transition: color .4s;
+  transition: color .4s; }
 
 .lol-link:hover {
-  text-shadow: 0px 0px 1px #00adb5; }
+  color: #ff5354; }
+
+@media all and (max-width: 768px) {
+  .showcaseContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 @-webkit-keyframes fadein {
   0% {

@@ -1,40 +1,67 @@
-@import url(//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
+@import 'app';
 
 .showcaseContainer{
-    width: 70%;
-    height: 300px;
-    margin: 9px auto 0px auto;
+    width: auto;
+    height: auto;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     transition-delay: 2s;
     animation: fadein 1s ease-out;
 }
 
-.helix-col{
-    display: flex;
-    flex-direction: column;
+.helix-tilt{
+    @extend %flex-column;
+    border: 2px solid goldenrod;
+    justify-content: center;
+    
+    .helix-summoner{
+        background-size: contain;
+        margin-top: 15px;
+
+        flex: 1 1 130px;
+    }
+
+    .helix-row{
+        @extend %flex-row;
+        width:80%;
+        margin: 5% auto 0% auto;
+        justify-content: space-between;
+
+        flex: 1 1 130px;
+
+        .helix-stats {
+            flex: 1;
+        }    
+
+        .helix-history{
+            flex: 1;
+        }
+    }
+
 }
 
-.helix-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.helix-detail {
+
 }
 
 .helix-header{
-    font-family: 'Krungthep';
+    font-family: $font;
     font-size: 5vw; 
-    color: #00adb5;
+    color: $theme-secondary-active;
     margin: 0px;
     float: left;
+    transition: all .4s;
 }
+
 .helix-text {
-    font-size: 13px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-family: $font;
     color: rgb(175, 175, 175);
     text-align: justify;
     text-justify: inter-word;
 }
+
 .helix-gg{
     font-style: normal;
     color: #eeeeee;
@@ -43,12 +70,19 @@
 .lol-link{
     user-select: none;
     text-decoration: none;
-    color: #00adb5;
+    color: $theme-secondary-inactive;
     cursor: pointer;
+    transition: color .4s;
 }
 
 .lol-link:hover{
-    text-shadow: 0px 0px 1px #00adb5;
+    color: $theme-secondary-active;
+}
+
+@media all and (max-width:768px) {
+.showcaseContainer {
+    flex-direction: column;
+}
 }
 
 @keyframes fadein {
